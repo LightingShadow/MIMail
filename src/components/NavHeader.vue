@@ -1,12 +1,17 @@
 <template>
     <div>
-
+        nav-header
     </div>
 </template>
 
 <script>
     export default {
-        name: 'nav-header'
+        name: 'nav-header',
+        data() {
+            return {
+
+            }
+        }
     }
 </script>
 

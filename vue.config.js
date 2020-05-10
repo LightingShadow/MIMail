@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
     devServer: {
         host: 'localhost',
@@ -9,6 +10,13 @@ module.exports = {
                 pathRewrite: {
                     '/static': '/static'
                 }
+            }
+        }
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                components: path.resolve(__dirname,'src/components'),
             }
         }
     }
