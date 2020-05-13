@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import storage from './storage/index';
   export default {
     data() {
       return {
@@ -14,6 +15,7 @@
       }
     },
     mounted() {
+     storage.setItem('a',1,'user')
     }
   }
 </script>
