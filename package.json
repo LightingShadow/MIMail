@@ -13,6 +13,7 @@
     "core-js": "^3.6.4",
     "element-ui": "^2.13.1",
     "jsonp": "^0.2.1",
+    "mockjs": "^1.1.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
@@ -44,7 +45,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "vue/no-dupe-keys": "off"
+    }
   },
   "browserslist": [
     "> 1%",

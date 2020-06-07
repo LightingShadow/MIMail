@@ -3,23 +3,34 @@
     <router-view>
 
     </router-view>
+    <div v-for="(item,index) in items" :key = index>
+      {{item}}
+    </div>
+    <button @click='addItem'>添加元素</button>
   </div>
 </template>
 
 <script>
-import storage from './storage/index';
   export default {
     data() {
       return {
-
+        items: [1,2,3,4,5,6]
+      }
+    },
+    methods: {
+      addItem() {
+        
       }
     },
     mounted() {
-     storage.setItem('a',1,'user')
+
+    },
+    computed: {
+    
     }
   }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+@import './assets/scss/reset.scss'
 </style>
